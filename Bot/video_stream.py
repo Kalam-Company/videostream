@@ -23,7 +23,7 @@ async def start(client, m: Message):
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["help"]))
 async def start(client, m: Message):
-	await m.reply("\n🪄 **Follow these steps...** 🎺\n\n1. Start Video Chat in your channel or Start Voice Chat in your group.\n\n2. Send me a Direct Download link or YouTube link or TG File and Reply to the message as /play... 🥳 \n\n3. To Stop Streaming Use \stop... 🥳 \n\n**© Created & Developed by \n   @KiruthiVarma**")
+	await m.reply("\n🪄 **Follow these steps...** 🎺\n\n1. Start Video Chat in your channel or Start Voice Chat in your group.\n\n2. Send me a Direct Download link or YouTube link or TG File and Reply to the message as /play... 🥳 \n\n3. To Stop Streaming Use /stop... 🥳 \n\n**© Created & Developed by \n   @KiruthiVarma**")
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["play"]))
 async def play(client, m: Message):
@@ -53,7 +53,7 @@ async def play(client, m: Message):
 			         		await group_call.join(CHAT)
 			         		await group_call.start_video(link,enable_experimental_lip_sync=True)
 			         		VIDEO_CALL[CHAT] = group_call
-			         		await m.reply("** Started Streaming!**")
+			         		await m.reply("**Started Streaming!!!** \n\n /stop to Stop Streaming...")
 			         	except Exception as e:
 			         	    	await m.reply(f"**Error** -- `{e}`")
 				             	
