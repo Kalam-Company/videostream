@@ -19,8 +19,11 @@ VIDEO_CALL = {}
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["start"]))
 async def start(client, m: Message):
-	await m.reply("Hello Start Stream Video Using Command /play(reply_to_message) and /stop\n  ")
+	await m.reply("<b>வணக்கம்,</b> \n\t\tI'm your Channel Live Streamer...! 😇 \n/help to know more...\n\n\t<b> © Created & Developed by \n@KiruthiVarma</b")
 
+@Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["help"]))
+async def start(client, m: Message):
+	await m.reply("<b>\n🪄<b>Follow these steps...</b>\n1. "Start Video Chat" in your channel or "Start Voice Chat" in your group.\n2. Send me a Direct Download link or YouTube link or TG File and Reply to the message as /play (To Stream Video on that Link) \n3. To Stop Streaming Use \stop... 🥳 \n\n\t<b> © Created & Developed by \n@KiruthiVarma</b>")
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["play"]))
 async def play(client, m: Message):
