@@ -19,11 +19,11 @@ VIDEO_CALL = {}
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["start"]))
 async def start(client, m: Message):
-	await m.reply("**வணக்கம்,** \n\t\t I am your Live Streamer...! 😇 \n /help to know more... \n\n**© Created & Developed by \n 🔥 @KiruthiVarma.**")
+	await m.reply("வணக்கம் <b>{message.from_user.first_name}</b>, \n\t\t I am a Live Streamer...! 😇 \n I can Stream Video or Audio in your Channel or Group... 🥳\n\n /help to know more... \n\n**©Developed by \n 🔥 @KiruthiVarma.**")
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["help"]))
 async def help(client, m: Message):
-	await m.reply("\n🪄 **Follow these steps...** 🎺\n\n1. Start Live Stream in your channel or Start Voice Chat in your group.\n\n2. Send me a Direct Download link or YouTube link or TG File and Reply to the message as /play... 🥳 \n\n3. To Stop Streaming Use /stop... 🥳 \n\n**© Created & Developed by \n   @KiruthiVarma**")
+	await m.reply("\n\t\t🪄 **Follow these steps...** 🎺\n\n**For Channels:-**\n\n1. Start Live Stream in your channel. \n\n2. Send me a Direct Download link or YouTube link or TG File and Reply to the message as /play... 🥳 \n\n3. To Stop Streaming Use /stop... 🥳 \n\n**For Groups:-**\n\n1. Start Voice Chat in your group. \n\n2. Send me a Direct Download link or YouTube link or TG File and Reply to the message as /stream... 🥳 \n\n3. To Stop Streaming Use /stopstream... \n\n**©Developed by \n 🔥 @KiruthiVarma.**")
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["play"]))
 async def play(client, m: Message):
