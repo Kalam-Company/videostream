@@ -30,7 +30,7 @@ Deploy Your Own Bot ♥️ **Star 🌟 Fork 🍴 & Deploy**
 
 ### 💜 Railway - use at own risk
 
-[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/lntechnical2/videostream&envs=CHAT,SESSION_NAME,API_ID,API_HASH,TOKEN,ADMIN)
+[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/Kalam-Company/videostream&envs=CHAT,SESSION_NAME,API_ID,API_HASH,TOKEN,ADMIN)
 
 ### 💜 Heroku - simplest way
 
